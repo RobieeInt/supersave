@@ -8,7 +8,7 @@
                         src="images/demo-corporate-logo-black.png" data-at2x="images/demo-corporate-logo-black@2x.png"
                         alt=""></a>
                 <p class="lh-30 w-90 xl-w-100 mx-lg-auto mx-xl-0">Gearing your company through an innovative
-                    strategy.</p>
+                    Energy.</p>
                 <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">
                     <ul class="medium-icon dark">
                         <li class="my-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
