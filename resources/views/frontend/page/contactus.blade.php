@@ -1,138 +1,222 @@
-@extends('frontend.layouts.base')
+@extends('frontend.layouts.basesupersave')
 
-@section('title', 'About Us')
+@section('title', 'Contact Us')
 
 @section('content')
-    <!-- Start contact section -->
-    <section class="contact__section section--padding">
+    <section class="top-space-margin page-title-big-typography border-radius-6px lg-border-radius-0px p-0"
+        data-parallax-background-ratio="0.5" style="background-image: url({{ asset('supersave/bg/solar-panel-bg-1.jpg') }})">
+        <div class="opacity-extra-medium bg-blue-whale"></div>
         <div class="container">
-            <div class="section__heading mb-40">
-                <h2 class="section__heading--maintitle contact__section--hrading mb-10">Hubungi Kami</h2>
-                <p class="contact__section--hrading__desc">{{ $contact->message }}</p>
-            </div>
-            <div class="main__contact--area">
-                <div class="row align-items-center row-md-reverse">
-                    <div class="col-lg-5">
-                        <div class="contact__info border-radius-10">
-                            <div class="contact__info--items">
-                                <h3 class="contact__info--content__title text-white mb-15">Contact Us</h3>
-                                <div class="contact__info--items__inner d-flex">
-                                    <div class="contact__info--icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="31.568" height="31.128"
-                                            viewBox="0 0 31.568 31.128">
-                                            <path id="ic_phone_forwarded_24px"
-                                                d="M26.676,16.564l7.892-7.782L26.676,1V5.669H20.362v6.226h6.314Zm3.157,7a18.162,18.162,0,0,1-5.635-.887,1.627,1.627,0,0,0-1.61.374l-3.472,3.424a23.585,23.585,0,0,1-10.4-10.257l3.472-3.44a1.48,1.48,0,0,0,.395-1.556,17.457,17.457,0,0,1-.9-5.556A1.572,1.572,0,0,0,10.1,4.113H4.578A1.572,1.572,0,0,0,3,5.669,26.645,26.645,0,0,0,29.832,32.128a1.572,1.572,0,0,0,1.578-1.556V25.124A1.572,1.572,0,0,0,29.832,23.568Z"
-                                                transform="translate(-3 -1)" fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                    <div class="contact__info--content">
-                                        <p class="contact__info--content__desc text-white">
-                                            {{ $contact->phone }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact__info--items">
-                                <h3 class="contact__info--content__title text-white mb-15">Email Address</h3>
-                                <div class="contact__info--items__inner d-flex">
-                                    <div class="contact__info--icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="31.13"
-                                            viewBox="0 0 31.57 31.13">
-                                            <path id="ic_email_24px"
-                                                d="M30.413,4H5.157C3.421,4,2.016,5.751,2.016,7.891L2,31.239c0,2.14,1.421,3.891,3.157,3.891H30.413c1.736,0,3.157-1.751,3.157-3.891V7.891C33.57,5.751,32.149,4,30.413,4Zm0,7.783L17.785,21.511,5.157,11.783V7.891l12.628,9.728L30.413,7.891Z"
-                                                transform="translate(-2 -4)" fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                    <div class="contact__info--content">
-                                        <p class="contact__info--content__desc text-white">
-                                            {{ $contact->email }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact__info--items">
-                                <h3 class="contact__info--content__title text-white mb-15">Office Location</h3>
-                                <div class="contact__info--items__inner d-flex">
-                                    <div class="contact__info--icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="31.13"
-                                            viewBox="0 0 31.57 31.13">
-                                            <path id="ic_account_balance_24px"
-                                                d="M5.323,14.341V24.718h4.985V14.341Zm9.969,0V24.718h4.985V14.341ZM2,32.13H33.57V27.683H2ZM25.262,14.341V24.718h4.985V14.341ZM17.785,1,2,8.412v2.965H33.57V8.412Z"
-                                                transform="translate(-2 -1)" fill="currentColor" />
-                                        </svg>
-                                    </div>
-                                    <div class="contact__info--content">
-                                        <p class="contact__info--content__desc text-white">
-                                            {{ $contact->address }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact__info--items">
-                                <h3 class="contact__info--content__title text-white mb-15">Follow Us</h3>
-                                <ul class="contact__info--social d-flex">
-                                    <li class="contact__info--social__list">
-                                        <a class="contact__info--social__icon" target="_blank"
-                                            href="https://www.facebook.com">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="7.667" height="16.524"
-                                                viewBox="0 0 7.667 16.524">
-                                                <path data-name="Path 237"
-                                                    d="M967.495,353.678h-2.3v8.253h-3.437v-8.253H960.13V350.77h1.624v-1.888a4.087,4.087,0,0,1,.264-1.492,2.9,2.9,0,0,1,1.039-1.379,3.626,3.626,0,0,1,2.153-.6l2.549.019v2.833h-1.851a.732.732,0,0,0-.472.151.8.8,0,0,0-.246.642v1.719H967.8Z"
-                                                    transform="translate(-960.13 -345.407)" fill="currentColor"></path>
-                                            </svg>
-                                            <span class="visually-hidden">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__info--social__list">
-                                        <a class="contact__info--social__icon" target="_blank" href="https://twitter.com">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.489" height="13.384"
-                                                viewBox="0 0 16.489 13.384">
-                                                <path data-name="Path 303"
-                                                    d="M966.025,1144.2v.433a9.783,9.783,0,0,1-.621,3.388,10.1,10.1,0,0,1-1.845,3.087,9.153,9.153,0,0,1-3.012,2.259,9.825,9.825,0,0,1-4.122.866,9.632,9.632,0,0,1-2.748-.4,9.346,9.346,0,0,1-2.447-1.11q.4.038.809.038a6.723,6.723,0,0,0,2.24-.376,7.022,7.022,0,0,0,1.958-1.054,3.379,3.379,0,0,1-1.958-.687,3.259,3.259,0,0,1-1.186-1.666,3.364,3.364,0,0,0,.621.056,3.488,3.488,0,0,0,.885-.113,3.267,3.267,0,0,1-1.374-.631,3.356,3.356,0,0,1-.969-1.186,3.524,3.524,0,0,1-.367-1.5v-.057a3.172,3.172,0,0,0,1.544.433,3.407,3.407,0,0,1-1.1-1.214,3.308,3.308,0,0,1-.4-1.609,3.362,3.362,0,0,1,.452-1.694,9.652,9.652,0,0,0,6.964,3.538,3.911,3.911,0,0,1-.075-.772,3.293,3.293,0,0,1,.452-1.694,3.409,3.409,0,0,1,1.233-1.233,3.257,3.257,0,0,1,1.685-.461,3.351,3.351,0,0,1,2.466,1.073,6.572,6.572,0,0,0,2.146-.828,3.272,3.272,0,0,1-.574,1.083,3.477,3.477,0,0,1-.913.8,6.869,6.869,0,0,0,1.958-.546A7.074,7.074,0,0,1,966.025,1144.2Z"
-                                                    transform="translate(-951.23 -1140.849)" fill="currentColor"></path>
-                                            </svg>
-                                            <span class="visually-hidden">Twitter</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__info--social__list">
-                                        <a class="contact__info--social__icon" target="_blank" href="https://www.skype.com">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.482" height="16.481"
-                                                viewBox="0 0 16.482 16.481">
-                                                <path data-name="Path 284"
-                                                    d="M879,926.615a4.479,4.479,0,0,1,.622-2.317,4.666,4.666,0,0,1,1.676-1.677,4.482,4.482,0,0,1,2.317-.622,4.577,4.577,0,0,1,2.43.678,7.58,7.58,0,0,1,5.048.961,7.561,7.561,0,0,1,3.786,6.593,8,8,0,0,1-.094,1.206,4.676,4.676,0,0,1,.7,2.411,4.53,4.53,0,0,1-.622,2.326,4.62,4.62,0,0,1-1.686,1.686,4.626,4.626,0,0,1-4.756-.075,7.7,7.7,0,0,1-1.187.094,7.623,7.623,0,0,1-7.647-7.647,7.46,7.46,0,0,1,.094-1.187A4.424,4.424,0,0,1,879,926.615Zm4.107,1.714a2.473,2.473,0,0,0,.282,1.234,2.41,2.41,0,0,0,.782.829,5.091,5.091,0,0,0,1.215.565,15.981,15.981,0,0,0,1.582.424q.678.151.979.235a3.091,3.091,0,0,1,.593.235,1.388,1.388,0,0,1,.452.348.738.738,0,0,1,.16.481.91.91,0,0,1-.48.753,2.254,2.254,0,0,1-1.271.321,2.105,2.105,0,0,1-1.253-.292,2.262,2.262,0,0,1-.65-.838,2.42,2.42,0,0,0-.414-.546.853.853,0,0,0-.584-.17.893.893,0,0,0-.669.283.919.919,0,0,0-.273.659,1.654,1.654,0,0,0,.217.782,2.456,2.456,0,0,0,.678.763,3.64,3.64,0,0,0,1.158.574,5.931,5.931,0,0,0,1.639.235,5.767,5.767,0,0,0,2.072-.339,2.982,2.982,0,0,0,1.356-.961,2.306,2.306,0,0,0,.471-1.431,2.161,2.161,0,0,0-.443-1.375,3.009,3.009,0,0,0-1.2-.894,10.118,10.118,0,0,0-1.865-.575,11.2,11.2,0,0,1-1.309-.311,2.011,2.011,0,0,1-.8-.452.992.992,0,0,1-.3-.744,1.143,1.143,0,0,1,.565-.97,2.59,2.59,0,0,1,1.488-.386,2.538,2.538,0,0,1,1.074.188,1.634,1.634,0,0,1,.622.49,3.477,3.477,0,0,1,.414.753,1.568,1.568,0,0,0,.4.594.866.866,0,0,0,.574.2,1,1,0,0,0,.706-.254.828.828,0,0,0,.273-.631,2.234,2.234,0,0,0-.443-1.253,3.321,3.321,0,0,0-1.158-1.046,5.375,5.375,0,0,0-2.524-.527,5.764,5.764,0,0,0-2.213.386,3.161,3.161,0,0,0-1.422,1.083A2.738,2.738,0,0,0,883.106,928.329Z"
-                                                    transform="translate(-878.999 -922)" fill="currentColor"></path>
-                                            </svg>
-                                            <span class="visually-hidden">Skype</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__info--social__list">
-                                        <a class="contact__info--social__icon" target="_blank"
-                                            href="https://www.youtube.com">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16.49" height="11.582"
-                                                viewBox="0 0 16.49 11.582">
-                                                <path data-name="Path 321"
-                                                    d="M967.759,1365.592q0,1.377-.019,1.717-.076,1.114-.151,1.622a3.981,3.981,0,0,1-.245.925,1.847,1.847,0,0,1-.453.717,2.171,2.171,0,0,1-1.151.6q-3.585.265-7.641.189-2.377-.038-3.387-.085a11.337,11.337,0,0,1-1.5-.142,2.206,2.206,0,0,1-1.113-.585,2.562,2.562,0,0,1-.528-1.037,3.523,3.523,0,0,1-.141-.585c-.032-.2-.06-.5-.085-.906a38.894,38.894,0,0,1,0-4.867l.113-.925a4.382,4.382,0,0,1,.208-.906,2.069,2.069,0,0,1,.491-.755,2.409,2.409,0,0,1,1.113-.566,19.2,19.2,0,0,1,2.292-.151q1.82-.056,3.953-.056t3.952.066q1.821.067,2.311.142a2.3,2.3,0,0,1,.726.283,1.865,1.865,0,0,1,.557.49,3.425,3.425,0,0,1,.434,1.019,5.72,5.72,0,0,1,.189,1.075q0,.095.057,1C967.752,1364.1,967.759,1364.677,967.759,1365.592Zm-7.6.925q1.49-.754,2.113-1.094l-4.434-2.339v4.66Q958.609,1367.311,960.156,1366.517Z"
-                                                    transform="translate(-951.269 -1359.8)" fill="currentColor"></path>
-                                            </svg>
-                                            <span class="visually-hidden">Youtube</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="row align-items-center justify-content-center small-screen">
+                <div class="col-lg-8 position-relative text-center page-title-extra-large"
+                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <h1 class="m-auto text-white text-shadow-double-large fw-600 ls-minus-2px">Contact us</h1>
+                </div>
+                <div class="down-section text-center"
+                    data-anime='{ "translateY": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <a href="#down-section" class="section-link">
+                        <div class="text-white">
+                            <i class="feather icon-feather-chevron-down icon-very-medium"></i>
                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+    <!-- start section -->
+    <section id="down-section">
+        <div class="container">
+            <div class="row align-items-end justify-content-center mb-6 text-center text-lg-start sm-mb-8">
+                <div class="col-xl-5 col-lg-7 col-md-10 md-mb-25px"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span
+                        class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">How
+                        can help you?</span>
+                    <h3 class="text-dark-gray fw-700 ls-minus-1px mb-0">Have a project in mind? Get in touch!</h3>
+                </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-5 col-md-10 last-paragraph-no-margin">
+                    <p class="w-90 lg-w-100"
+                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        We're here to help and answer any question you might have. We look forward to hearing from you. Any
+                        need help you please contact us or meet to office with coffee.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 mb-6 sm-mb-8"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="col md-mb-30px text-center text-sm-start">
+                    <span
+                        class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i
+                            class="feather icon-feather-map-pin d-inline-block icon-small me-10px"></i>Office
+                        location</span>
+                    <div class="last-paragraph-no-margin">
+                        <p>1Jl. Raya Mauk (M. Toha) KM 3 No 8, <br>
+                            Kel. Galeong, Kec. <br>
+                            Karawaci, Tangerang Banten Kode Pos 15113<< /p>
                     </div>
-                    <div class="col-lg-7">
-
-                        <div class="contact__form">
-                            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0"
-                                    scrolling="no" marginheight="0" marginwidth="0"
-                                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-6.172375009810255,%20106.61226761716651+(PT%20Griya%20Gemilang%20Mandiri)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                                        href="https://www.maps.ie/population/">Find Population on Map</a></iframe></div>
+                </div>
+                <div class="col md-mb-30px text-center text-sm-start">
+                    <span
+                        class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i
+                            class="feather icon-feather-mail d-inline-block icon-small me-10px"></i>Send a message</span>
+                    <a href="mailto:esti@supersave.id">esti@supersave.id</a><br>
+                    <a href="mailto:sindah@supersave.id">indah@supersave.id</a>
+                </div>
+                <div class="col xs-mb-30px text-center text-sm-start">
+                    <span
+                        class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i
+                            class="feather icon-feather-phone d-inline-block icon-small me-10px"></i>Call us directly</span>
+                    <a href="tel:1800222000">1-800-222-000</a><br>
+                    <a href="tel:1800222002">1-800-222-002</a>
+                </div>
+                <div class="col text-center text-sm-start">
+                    <span
+                        class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i
+                            class="feather icon-feather-users d-inline-block icon-small me-10px"></i>Join our team</span>
+                    <a href="mailto:hire@supersave.id">hire@supersave.id</a><br>
+                    <a href="mailto:hr@supersave.id">hr@supersave.id</a>
+                </div>
+            </div>
+            <div class="row justify-content-center g-0"
+                data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <div
+                    class="col-auto text-center last-paragraph-no-margin icon-with-text-style-08 pt-20px pb-20px ps-8 pe-8 md-ps-30px md-pe-30px bg-gradient-flamingo-amethyst-green border-radius-100px xs-border-radius-30px">
+                    <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                        <div class="feature-box-icon me-10px">
+                            <i class="bi bi-chat-text fs-24 icon-very-medium text-white"></i>
+                        </div>
+                        <div
+                            class="feature-box-content last-paragraph-no-margin text-white text-uppercase fs-15 fw-600 ls-05px xs-lh-24">
+                            Let's make something great work together. <a href="demo-corporate-contact.html"
+                                class="text-white text-decoration-line-bottom-medium">Got a project in mind?</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End contact section -->
+    <!-- end section -->
+    <!-- start section -->
+    <section
+        class="position-relative one-half-screen sm-small-screen overflow-hidden border border-radius-top-lr lg-border-radius-0px"
+        data-parallax-background-ratio="0.5"
+        style="background-image: url({{ asset('supersave/bg/solar-panel-bg-1.jpg') }})">
+        <div class="opacity-light bg-dark-gray"></div>
+        <div
+            class="fs-225 ls-minus-10px alt-font text-gradient-orange-sky-blue fw-600 position-absolute left-minus-25px bottom-minus-50px sm-ls-minus-5px sm-bottom-minus-20px sm-fs-200 xs-left-minus-10px xs-fs-130">
+            contact</div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-gradient-quartz-white position-relative z-index-0 sm-pt-0">
+        <div class="container-fluid overlap-section p-0">
+            <div class="row g-0 justify-content-end overlap-section-one-fourth">
+                <div class="col-md-6">
+                    <div id="map" class="map">
+                        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=-6.172375009810255,%20106.61226761716651+(PT%20Griya%20Gemilang%20Mandiri)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- <div class="container-fluid overflow-hidden position-relative pt-6 sm-pt-40px">
+            <img src="https://via.placeholder.com/605x580" class="position-absolute top-0 left-minus-300px z-index-minus-1"
+                data-bottom-top="transform: rotate(0deg) translateY(0)"
+                data-top-bottom="transform:rotate(-15deg) translateY(0)" alt="" />
+            <div class="row justify-content-center mb-2 sm-mb-3">
+                <div class="col-lg-6 text-center"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span
+                        class="ps-25px pe-25px mb-15px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-quartz-light-transparent d-inline-block">Get
+                        in touch with us</span>
+                    <h3 class="text-dark-gray fw-700 ls-minus-1px">How we can help you?</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xxl-6 col-xl-7 col-lg-11">
+                    <form action="email-templates/contact-form.php" method="post" class="contact-form-style-03">
+                        <div class="row justify-content-center"
+                            data-anime='{ "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray mb-0">Enter your
+                                    name*</label>
+                                <div class="position-relative form-group mb-25px">
+                                    <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required"
+                                        id="exampleInputEmail1" type="text" name="name"
+                                        placeholder="What's your good name?" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray mb-0">Email
+                                    address*</label>
+                                <div class="position-relative form-group mb-25px">
+                                    <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control required"
+                                        id="exampleInputEmail2" type="email" name="email"
+                                        placeholder="Enter your email address" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray mb-0">Phone
+                                    number</label>
+                                <div class="position-relative form-group mb-25px">
+                                    <span class="form-icon"><i class="bi bi-telephone"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control"
+                                        id="exampleInputEmail3" type="tel" name="phone"
+                                        placeholder="Enter your phone number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleInputEmail1"
+                                    class="form-label fw-600 text-dark-gray mb-0">Subject</label>
+                                <div class="position-relative form-group mb-25px">
+                                    <span class="form-icon"><i class="bi bi-journals"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control"
+                                        id="exampleInputEmail4" type="text" name="subject"
+                                        placeholder="How can we help you?" />
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray mb-0">Your
+                                    message</label>
+                                <div class="position-relative form-group form-textarea mb-0">
+                                    <textarea class="ps-0 border-radius-0px border-color-extra-medium-gray bg-transparent form-control" name="comment"
+                                        placeholder="Describe about your project" rows="4"></textarea>
+                                    <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-lg-7 col-md-8">
+                                <p class="mb-0 fs-14 lh-24 text-center text-md-start">We are committed to protecting your
+                                    privacy. We will never collect information about you without your explicit consent.</p>
+                            </div>
+                            <div class="col-xxl-6 col-lg-5 col-md-4 text-center text-md-end sm-mt-25px">
+                                <input id="exampleInputEmail5" type="hidden" name="redirect" value="">
+                                <button
+                                    class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge text-transform-none primary-font submit"
+                                    type="submit">Send message</button>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> --}}
+    </section>
+@endsection
+
+@section('js')
+    <script src="{{ asset('supersave/js/map.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('supersave/js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('supersave/js/vendors.min.js') }}"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
 @endsection

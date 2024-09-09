@@ -37,12 +37,13 @@ class LandingController extends Controller
 
     //productdetail
     public function productdetail($slug) {
-        $product = Product::with(['galleries', 'category'])->where('slug', $slug)->firstOrFail();
-        //get random products
-        $randomProducts = Product::with(['galleries', 'category'])->where('status', '1')->inRandomOrder()->take(6)->get();
-        // dd($product);
-        $contact = Contact::orderBy('id', 'desc')->first();
-        return view('frontend.page.productdetail', compact('product', 'randomProducts','contact'));
+        // $product = Product::with(['galleries', 'category'])->where('slug', $slug)->firstOrFail();
+        // //get random products
+        // $randomProducts = Product::with(['galleries', 'category'])->where('status', '1')->inRandomOrder()->take(6)->get();
+        // // dd($product);
+        // $contact = Contact::orderBy('id', 'desc')->first();
+        // return view('frontend.page.productdetail', compact('product', 'randomProducts','contact'));
+        return view('frontend.page.productdetail');
     }
 
     //aboutus

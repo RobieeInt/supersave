@@ -1,79 +1,192 @@
-@extends('frontend.layouts.base')
+@extends('frontend.layouts.basesupersave')
 
 @section('title', 'About Us')
 
 @section('content')
     <!-- Start about section -->
-    <section class="about__section section--padding mb-95">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__thumbnail d-flex">
-                        <div class="about__thumbnail--items">
-                            <img class="about__thumbnail--img border-radius-5 display-block"
-                                src="{{ asset('ggm/assets/img/other/about-thumb-list1.webp') }}" alt="about-thumbnail">
+
+    <section id="down-section" class="border-bottom border-color-extra-medium-gray">
+        <div class="container overlap-gap-section">
+            <div class="row align-items-end justify-content-center mb-5 md-mb-40px text-center text-md-start">
+                <div class="col-xl-5 col-lg-6 col-md-10 md-mb-20px text-center text-lg-start"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span
+                        class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">About
+                        company</span>
+                    <h3 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Powerful agency for corporate business.</h3>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1 text-center text-lg-start last-paragraph-no-margin">
+                    <p class="w-90 xl-w-100"
+                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        We strive to develop real-world web solutions that are ideal for small to large projects with
+                        bespoke project requirements. we compelling web, <span
+                            class="fw-600 text-dark-gray text-decoration-line-bottom">which are the right-fit for your
+                            target.</span></p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 justify-content-center"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <!-- start features box item -->
+                <div class="col custom-icon-with-text-style-02">
+                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden md-mb-20px">
+                        <div class="feature-box-icon">
+                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
                         </div>
-                        <div class="about__thumbnail--items position__relative">
-                            <img class="about__thumbnail--img border-radius-5 display-block"
-                                src="{{ asset('ggm/assets/img/other/about-thumb-list2.webp') }}" alt="about-thumbnail">
-                            <div class="banner__bideo--play about__thumbnail--play">
-                                <a class="bideo__play--icon glightbox" href="https://vimeo.com/115041822"
-                                    data-gallery="video">
-                                    <svg id="play" xmlns="http://www.w3.org/2000/svg" width="46.302" height="46.302"
-                                        viewBox="0 0 46.302 46.302">
-                                        <g id="Group_193" data-name="Group 193" transform="translate(0 0)">
-                                            <path id="Path_116" data-name="Path 116"
-                                                d="M39.521,6.781a23.151,23.151,0,0,0-32.74,32.74,23.151,23.151,0,0,0,32.74-32.74ZM23.151,44.457A21.306,21.306,0,1,1,44.457,23.151,21.33,21.33,0,0,1,23.151,44.457Z"
-                                                fill="currentColor"></path>
-                                            <g id="Group_188" data-name="Group 188" transform="translate(15.588 11.19)">
-                                                <g id="Group_187" data-name="Group 187">
-                                                    <path id="Path_117" data-name="Path 117"
-                                                        d="M190.3,133.213l-13.256-8.964a3,3,0,0,0-4.674,2.482v17.929a2.994,2.994,0,0,0,4.674,2.481l13.256-8.964a3,3,0,0,0,0-4.963Zm-1.033,3.435-13.256,8.964a1.151,1.151,0,0,1-1.8-.953V126.73a1.134,1.134,0,0,1,.611-1.017,1.134,1.134,0,0,1,1.185.063l13.256,8.964a1.151,1.151,0,0,1,0,1.907Z"
-                                                        transform="translate(-172.366 -123.734)" fill="currentColor"></path>
-                                                </g>
-                                            </g>
-                                            <g id="Group_190" data-name="Group 190" transform="translate(28.593 5.401)">
-                                                <g id="Group_189" data-name="Group 189">
-                                                    <path id="Path_118" data-name="Path 118"
-                                                        d="M328.31,70.492a18.965,18.965,0,0,0-10.886-10.708.922.922,0,1,0-.653,1.725,17.117,17.117,0,0,1,9.825,9.664.922.922,0,1,0,1.714-.682Z"
-                                                        transform="translate(-316.174 -59.724)" fill="currentColor"></path>
-                                                </g>
-                                            </g>
-                                            <g id="Group_192" data-name="Group 192" transform="translate(22.228 4.243)">
-                                                <g id="Group_191" data-name="Group 191">
-                                                    <path id="Path_119" data-name="Path 119"
-                                                        d="M249.922,47.187a19.08,19.08,0,0,0-3.2-.27.922.922,0,0,0,0,1.845,17.245,17.245,0,0,1,2.889.243.922.922,0,1,0,.31-1.818Z"
-                                                        transform="translate(-245.801 -46.917)" fill="currentColor"></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <span class="visually-hidden">Play</span>
-                                </a>
-                            </div>
+                        <div class="feature-box-content">
+                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Trusted company</span>
+                            <p>We deliver email marketing campaigns to audience.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about__content">
-                        <span class="about__content--subtitle text__secondary mb-20"> Why Choose us</span>
-                        <h2 class="about__content--maintitle mb-25">We do not buy from the open market & traders.</h2>
-                        <p class="about__content--desc mb-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                            illo, est repellendus are quia voluptate neque reiciendis ea placeat labore maiores cum, hic
-                            ducimus ad a dolorem soluta consectetur adipisci. Perspiciatis quas ab quibusdam is.</p>
-                        <p class="about__content--desc mb-25">Itaque accusantium eveniet a laboriosam dolorem? Magni
-                            suscipit est corrupti explicabo non perspiciatis, excepturi ut asperiores assumenda rerum?
-                            Provident ab corrupti sequi, voluptates repudiandae eius odit aut.</p>
-                        <div class="about__author position__relative">
-                            <h4 class="about__author--name">Om Bewok</h4>
-                            <span class="about__author--rank">Spa Manager</span>
-                            {{-- <img class="about__author--signature" src="{{ asset('ggm/assets/img/icon/signature.webp') }}"
-                                alt="signature"> --}}
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col custom-icon-with-text-style-02">
+                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden md-mb-20px">
+                        <div class="feature-box-icon">
+                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Professional work</span>
+                            <p>We also help our clients with social media strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col custom-icon-with-text-style-02">
+                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden xs-mb-20px">
+                        <div class="feature-box-icon">
+                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Award winning</span>
+                            <p>We believe in challenges so we have made challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+                <!-- start features box item -->
+                <div class="col custom-icon-with-text-style-02">
+                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden">
+                        <div class="feature-box-icon">
+                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
+                        </div>
+                        <div class="feature-box-content">
+                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Help any time</span>
+                            <p>We never fail for support for your business anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end features box item -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-0 sm-pt-50px"
+        data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+        <div class="container overlap-section">
+            <div class="row justify-content-center g-0">
+                <div
+                    class="col-auto text-center last-paragraph-no-margin icon-with-text-style-08 pt-20px pb-20px ps-8 pe-8 md-ps-30px md-pe-30px bg-white border border-color-extra-medium-gray box-shadow-medium-bottom border-radius-100px xs-border-radius-10px">
+                    <div class="feature-box feature-box-left-icon-middle overflow-hidden">
+                        <div class="feature-box-icon me-10px">
+                            <i class="bi bi-chat-text icon-extra-medium text-base-color"></i>
+                        </div>
+                        <div
+                            class="feature-box-content last-paragraph-no-margin text-dark-gray text-uppercase fs-15 fw-700 ls-05px">
+                            Let's make something great work together. <a href="demo-corporate-contact.html"
+                                class="text-base-color text-decoration-line-bottom-medium border-1">Got a project in
+                                mind?</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="position-relative overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center align-items-center mb-3">
+                <div class="col-xl-5 col-lg-6 md-mb-14 sm-mb-18 xs-mb-23 position-relative"
+                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="w-75 sm-w-80" data-animation-delay="200" data-shadow-animation="true"
+                        data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                        <img src="https://via.placeholder.com/600x710" alt="" class="border-radius-6px w-100">
+                        <div
+                            class="position-absolute top-30px z-index-8 left-minus-90px lg-left-minus-25px sm-left-minus-0px lg-w-30">
+                            <img src="images/demo-corporate-about-01.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="w-55 overflow-hidden position-absolute right-15px xs-w-55 bottom-minus-50px"
+                        data-shadow-animation="true" data-animation-delay="100"
+                        data-bottom-top="transform: translateY(20px)" data-top-bottom="transform: translateY(-20px)">
+                        <img src="https://via.placeholder.com/600x633" alt=""
+                            class="border-radius-6px box-shadow-quadruple-large w-100" />
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start"
+                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 150, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="swiper position-relative magic-cursor"
+                        data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
+                        <div class="swiper-wrapper mb-10px">
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span
+                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
+                                    mission</span>
+                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">We help to business growth and
+                                    solution.</h3>
+                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
+                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
+                                    scrambled it specimen book.</p>
+                            </div>
+                            <!-- end text slider item -->
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span
+                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
+                                    vision</span>
+                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">A business plan and performance
+                                    ideas.</h3>
+                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
+                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
+                                    scrambled it specimen book.</p>
+                            </div>
+                            <!-- end text slider item -->
+                            <!-- start text slider item -->
+                            <div class="swiper-slide">
+                                <span
+                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
+                                    value</span>
+                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">Make the creative solutions for
+                                    business.</h3>
+                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
+                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
+                                    scrambled it specimen book.</p>
+                            </div>
+                            <!-- end text slider item -->
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-lg-start">
+                            <!-- start slider navigation -->
+                            <div
+                                class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 border border-color-extra-medium-gray bg-white">
+                                <i class="bi bi-arrow-left-short icon-very-medium text-dark-gray"></i></div>
+                            <div
+                                class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 border border-color-extra-medium-gray bg-white">
+                                <i class="bi bi-arrow-right-short icon-very-medium text-dark-gray"></i></div>
+                            <!-- end slider navigation -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="https://via.placeholder.com/655x590"
+            class="position-absolute bottom-minus-50px right-minus-50px z-index-minus-1"
+            data-bottom-top="transform: rotate(0deg) translateY(0)"
+            data-top-bottom="transform:rotate(-15deg) translateY(0)" alt="" />
     </section>
     <!-- End about section -->
 @endsection
