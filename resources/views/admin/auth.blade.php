@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stream | Log in</title>
+    <title>SuperSave | Log in</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -20,7 +20,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ route('admin.login') }}"><b>GGM</b><br>Griya Gemilang Mandiri</a>
+            <a href="{{ route('admin.login') }}"><b>SuperSave</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="card">
