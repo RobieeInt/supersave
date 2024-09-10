@@ -199,6 +199,7 @@
         }); /*ready*/
     </script>
     <script type="text/javascript" src="{{ asset('supersave/js/main.js') }}"></script>
+    <script defer src="https://widget.tochat.be/bundle.js?key=6adcf9df-46db-4728-9cd9-aa82dd3c0b85"></script>
 </body>
 
 </html>
