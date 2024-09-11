@@ -61,7 +61,7 @@
                                                 <span class="text-white fw-600 fs-20">{{ $product->name }}</span>
                                                 <span
                                                     class="content-title text-white fs-13 fw-500 text-uppercase ls-05px">{{ $product->short_description }}</span>
-                                                <a href="{{ route('productDetail', 'wedaw') }}"
+                                                <a href="{{ route('productDetail', $product->slug) }}"
                                                     class="content-title-hover fs-13 lh-24 fw-500 ls-05px text-uppercase text-white opacity-6 text-decoration-line-bottom">
                                                     {{-- description with max char 15 --}}
                                                     {!! substr($product->description, 0, 15) !!}...
@@ -74,7 +74,7 @@
                                                 class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-regal-blue-transparent opacity-9">
                                             </div>
                                             <div class="box-overlay bg-gradient-base-color-transparent"></div>
-                                            <a href="{{ route('productDetail', 'wedaw') }}"
+                                            <a href="{{ route('productDetail', $product->slug) }}"
                                                 class="position-absolute z-index-1 top-0px left-0px h-100 w-100"></a>
                                         </div>
                                     </div>

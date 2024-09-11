@@ -6,7 +6,7 @@
     <!-- Start about section -->
     <section id='down-section'>
         <div class="container">
-            <div class="row">
+            <div class="row mt-10">
                 <div class="col-lg-4 pe-5 order-2 order-lg-1 lg-pe-3 md-pe-15px"
                     data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     {{-- <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
@@ -77,13 +77,15 @@
                 </div>
                 <div class="col-lg-8 order-1 order-lg-2 md-mb-50px"
                     data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <h4 class="text-dark-gray fw-700 alt-font mb-20px d-block">Business consulting services</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.</p>
-                    <img src="https://via.placeholder.com/785x435"
+                    <h4 class="text-dark-gray fw-700 alt-font mb-20px d-block">{{ $product->name }}</h4>
+                    <p>{{ $product->short_description }}</p>
+                    <p>{!! $product->description !!}</p>
+                    {{-- <img src="https://via.placeholder.com/785x435"
+                        class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px" alt=""> --}}
+                    {{-- image --}}
+                    <img src="{{ asset($product->galleries->first()->image) }}"
                         class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px" alt="">
-                    <div class="row row-cols-1 row-cols-md-2 mb-30px md-mb-15px">
+                    {{-- <div class="row row-cols-1 row-cols-md-2 mb-30px md-mb-15px">
                         <div class="col">
                             <span class="fs-24 ls-minus-05px alt-font text-dark-gray fw-700 mb-10px d-block">Strategic
                                 development</span>
@@ -95,8 +97,8 @@
                             <p class="w-90 sm-w-100">Lorem ipsum dolor sit amet conseetur adipiscing elit sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         </div>
-                    </div>
-                    <div class="cover-background p-7 border-radius-6px mb-60px md-mb-40px d-flex justify-content-end align-items-end sm-h-500px"
+                    </div> --}}
+                    {{-- <div class="cover-background p-7 border-radius-6px mb-60px md-mb-40px d-flex justify-content-end align-items-end sm-h-500px"
                         style="background-image: url(https://via.placeholder.com/785x435)">
                         <div class="opacity-light bg-gradient-regal-blue-transparent"></div>
                         <div
@@ -112,8 +114,8 @@
                                         class="feather icon-feather-mail me-10px"></i>Talk with our team</a>
                             </div>
                         </div>
-                    </div>
-                    <h4 class="text-dark-gray fw-700 alt-font mb-40px lg-mb-30px d-block">Benefits of working with us</h4>
+                    </div> --}}
+                    {{-- <h4 class="text-dark-gray fw-700 alt-font mb-40px lg-mb-30px d-block">Benefits of working with us</h4>
                     <div class="border border-color-extra-medium-gray border-radius-6px mb-40px xs-mb-30px overflow-hidden">
                         <p
                             class="ps-30px pe-30px pt-25px pb-25px border-bottom border-1 border-color-extra-medium-gray mb-0">
@@ -138,7 +140,7 @@
                                         class="text-decoration-line-bottom fw-700 text-dark-gray">Contact us now</a></p>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
