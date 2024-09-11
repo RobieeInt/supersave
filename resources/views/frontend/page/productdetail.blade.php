@@ -83,7 +83,7 @@
                     {{-- <img src="https://via.placeholder.com/785x435"
                         class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px" alt=""> --}}
                     {{-- image --}}
-                    <img src="{{ asset($product->galleries->first()->image) }}"
+                    <img src="{{ asset('storage/' . $product->galleries->first()->image) }}"
                         class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px" alt="">
                     {{-- <div class="row row-cols-1 row-cols-md-2 mb-30px md-mb-15px">
                         <div class="col">
