@@ -45,7 +45,7 @@
                                         class="interactive-banner-style-09 border-radius-6px overflow-hidden position-relative">
                                         {{-- <img src="https://via.placeholder.com/600x710" alt="" /> --}}
                                         {{-- get image from $product->galleries->image on 1st array --}}
-                                        <img src="{{ asset('storage/' . $product->galleries->first()->image) }}"
+                                        <img src="{{ asset('/storage/' . $product->galleries->first()->image) }}"
                                             alt="" />
                                         <div class="opacity-extra-medium bg-gradient-dark-transparent"></div>
                                         <div
