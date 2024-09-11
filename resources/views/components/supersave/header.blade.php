@@ -56,7 +56,7 @@
             </div>
             <div class="col-auto col-xl-3 col-lg-2 text-end md-pe-0">
                 <div class="header-icon">
-                    <div class="header-search-icon icon">
+                    {{-- <div class="header-search-icon icon">
                         <a href="#" class="search-form-icon header-search-form"><i
                                 class="feather icon-feather-search"></i></a>
                         <!-- start search input -->
@@ -77,7 +77,7 @@
                             </form>
                         </div>
                         <!-- end search input -->
-                    </div>
+                    </div> --}}
                     <div class="header-button ms-20px d-none d-xl-inline-block">
                         <a href="demo-corporate-contact.html"
                             class="btn btn-rounded btn-transparent-light-gray border-1 btn-medium btn-switch-text text-transform-none">
