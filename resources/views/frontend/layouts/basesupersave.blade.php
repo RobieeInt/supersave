@@ -192,7 +192,9 @@
         }); /*ready*/
     </script>
     <script type="text/javascript" src="{{ asset('supersave/js/main.js') }}"></script>
-    <script defer src="https://widget.tochat.be/bundle.js?key=6adcf9df-46db-4728-9cd9-aa82dd3c0b85"></script>
+    {{-- <script defer src="https://widget.tochat.be/bundle.js?key=6adcf9df-46db-4728-9cd9-aa82dd3c0b85"></script> --}}
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-04261c13-54fd-4621-80e0-7051187f182e" data-elfsight-app-lazy></div>
 
     @yield('js')
 </body>

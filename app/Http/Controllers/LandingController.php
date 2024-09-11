@@ -26,6 +26,8 @@ class LandingController extends Controller
         $contact = Contact::orderBy('id', 'desc')->first();
 
         // dd($productsPopular);
+
+        // dd($productsPopular);
         return view('index', compact('products','productsPopular','instagrams','testimonials','blogs','contact'));
     }
 
