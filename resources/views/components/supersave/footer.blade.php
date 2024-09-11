@@ -4,9 +4,11 @@
             <!-- start footer column -->
             <div
                 class="col-6 col-xl-3 col-lg-12 col-sm-6 last-paragraph-no-margin text-xl-start text-lg-center order-sm-1 lg-mb-50px sm-mb-30px">
-                <a href="demo-corporate.html" class="footer-logo mb-15px d-inline-block"><img
+                <a href="{{ route('landing-page') }}" class="footer-logo mb-15px d-inline-block">
+                    {{-- <img
                         src="images/demo-corporate-logo-black.png" data-at2x="images/demo-corporate-logo-black@2x.png"
-                        alt=""></a>
+                        alt=""> --}}
+                </a>
                 <p class="lh-30 w-90 xl-w-100 mx-lg-auto mx-xl-0">Gearing your company through an innovative
                     Energy.</p>
                 <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">

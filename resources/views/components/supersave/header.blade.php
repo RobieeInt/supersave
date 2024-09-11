@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
         <div class="container-fluid">
             {{-- <div class="col-auto col-xl-3 col-lg-2 me-lg-0 me-auto">
-                <a class="navbar-brand" href="demo-corporate.html">
+                <a class="navbar-brand" href="{{ route('landing-page') }}">
                     <img src="{{ asset('supersave/images/logo-ballast.png') }}"
                         data-at2x="{{ asset('supersave/images/logo-ballast.png') }}" alt="" class="default-logo">
                     <img src="{{ asset('supersave/images/logo-ballast.png') }}"
@@ -13,7 +13,7 @@
                 </a>
             </div> --}}
             <div class="col-auto col-xl-3 col-lg-2 me-lg-0 me-auto">
-                <a class="navbar-brand" href="demo-corporate.html">
+                <a class="navbar-brand" href="{{ route('landing-page') }}">
                     <h5 class="mt-4" style="color: rgb(40, 72, 91); font-weight: bold;">PT Super Save Elektronik
                         Ballast</h5>
                 </a>
