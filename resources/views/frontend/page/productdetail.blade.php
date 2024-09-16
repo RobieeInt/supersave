@@ -37,8 +37,8 @@
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span class="lh-22 mb-10px d-block text-white opacity-6 fw-300">Customer care?</span>
-                                <span class="text-white fs-20 fw-500 lh-22 d-block"><a href="tel:+12345678910">+1 234 567
-                                        8910</a></span>
+                                <span class="text-white fs-20 fw-500 lh-22 d-block"><a href="tel:+6285810003784">+62 858
+                                        1000 3784</a></span>
                             </div>
                         </div>
                     </div>

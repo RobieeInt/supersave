@@ -79,8 +79,9 @@
                         <!-- end search input -->
                     </div> --}}
                     <div class="header-button ms-20px d-none d-xl-inline-block">
-                        <a href="demo-corporate-contact.html"
-                            class="btn btn-rounded btn-transparent-light-gray border-1 btn-medium btn-switch-text text-transform-none">
+                        <a href="https://wa.me/6285810003784?text=Hi%20admin%2C%20saya%20mau%20konsultasi"
+                            class="btn btn-rounded btn-transparent-light-gray border-1 btn-medium btn-switch-text text-transform-none"
+                            target="_blank" rel="noopener noreferrer">
                             <span>
                                 <span class="btn-double-text fw-600" data-text="Free consultation">Free
                                     consultation</span>
