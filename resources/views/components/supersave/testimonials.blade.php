@@ -64,7 +64,7 @@
                                     <div class="mb-20px">
                                         <img src="
                                         {{-- {{ $testi->image }} --}}
-                                        {{ asset('/storage/' . $testi->image) }}
+                                        {{ asset('/storage/' . $testi->first()->image) }}
                                         "
                                             class="rounded-circle w-90px lg-w-65px me-15px" alt="">
                                         <div class="d-inline-block align-middle">
