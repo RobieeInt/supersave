@@ -42,12 +42,9 @@
             <!-- end footer column -->
             <!-- start footer column -->
             <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
-                <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Services</span>
+                <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Articles</span>
                 <ul>
-                    <li><a href="demo-corporate-services-details.html">Planning</a></li>
-                    <li><a href="demo-corporate-services-details.html">Research</a></li>
-                    <li><a href="demo-corporate-services-details.html">Consulting</a></li>
-                    <li><a href="demo-corporate-services-details.html">Analysis</a></li>
+                    <li><a href="{{ route('blog') }}">Blogs</a></li>
                 </ul>
             </div>
             <!-- end footer column -->
@@ -55,10 +52,9 @@
             <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
                 <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Customer</span>
                 <ul>
-                    <li><a href="demo-corporate-customer-stories.html">Client support</a></li>
-                    <li><a href="demo-corporate-customer-stories.html">Help center</a></li>
-                    <li><a href="demo-corporate-customer-stories.html">System status</a></li>
-                    <li><a href="demo-corporate-customer-stories.html">Feedback</a></li>
+                    <li><a href="https://wa.me/6285810003784?text=Hi%20admin%2C%20saya%20mau%20konsultasi"
+                            target="_blank">Client
+                            support</a></li>
                 </ul>
             </div>
             <!-- end footer column -->

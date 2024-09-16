@@ -35,7 +35,9 @@
                                         class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
                                         <div class="me-auto">
                                             <span class="blog-date d-inline-block fw-700 text-dark-gray">
-                                                {{ $item->created_at->format('d M Y') }}</span>
+                                                {{-- {{ $item->created_at->format('d M Y') }} --}}
+                                                {{ $item->created_at->diffForHumans() }}
+                                            </span>
                                             </span>
                                             <div class="d-inline-block author-name fw-700 text-dark-gray">By <a
                                                     href="demo-corporate-blog.html"
