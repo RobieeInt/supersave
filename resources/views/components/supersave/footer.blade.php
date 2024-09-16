@@ -29,14 +29,14 @@
             <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
                 <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Company</span>
                 <ul>
-                    <li><a href="demo-corporate-about.html">Who we are</a></li>
-                    <li><a href="demo-corporate-services.html">Our services</a>
+                    <li><a href="{{ route('aboutus') }}">Who we are</a></li>
+                    {{-- <li><a href="demo-corporate-services.html">Our services</a>
                         <div
                             class="bg-dark-gray fw-600 text-white lh-22 text-uppercase border-radius-30px ps-10px pe-10px fs-10 ms-10px d-inline-block align-middle">
                             Hot</div>
                     </li>
                     <li><a href="demo-corporate-customer-stories.html">Our clients</a></li>
-                    <li><a href="demo-corporate-contact.html">Contact us</a></li>
+                    <li><a href="demo-corporate-contact.html">Contact us</a></li> --}}
                 </ul>
             </div>
             <!-- end footer column -->
@@ -63,7 +63,7 @@
             </div>
             <!-- end footer column -->
             <!-- start footer column -->
-            <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-30px xs-mb-0 order-sm-2 order-lg-5">
+            {{-- <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-30px xs-mb-0 order-sm-2 order-lg-5">
                 <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Subscribe newsletter</span>
                 <p class="lh-30 w-95 sm-w-100 mb-15px">Subscribe our newsletter to get the latest news and
                     updates!</p>
@@ -80,7 +80,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> --}}
             <!-- end footer column -->
         </div>
         <div class="row justify-content-center align-items-center pt-2">

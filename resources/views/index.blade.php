@@ -42,6 +42,8 @@
 
         @include('components.supersave.start-product')
 
+        @include('components.supersave.blog')
+
         @include('components.supersave.testimonials')
 
         <!-- start footer -->

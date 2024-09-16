@@ -51,6 +51,7 @@
                         <li class="nav-item"><a href="demo-corporate-blog.html" class="nav-link">Blog</a>
                         </li> --}}
                         <li class="nav-item"><a href="{{ route('contactus') }}" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
                     </ul>
                 </div>
             </div>
