@@ -62,8 +62,11 @@
                                 <div
                                     class="d-flex justify-content-center h-100 flex-column border-radius-6px p-12 bg-white box-shadow-extra-large xl-p-10">
                                     <div class="mb-20px">
-                                        <img src="{{ $testi->image }}" class="rounded-circle w-90px lg-w-65px me-15px"
-                                            alt="">
+                                        <img src="
+                                        {{-- {{ $testi->image }} --}}
+                                        {{ asset('/storage/' . $testi->image) }}
+                                        "
+                                            class="rounded-circle w-90px lg-w-65px me-15px" alt="">
                                         <div class="d-inline-block align-middle">
                                             <div class="text-dark-gray fs-18 fw-600">{{ $testi->name }}</div>
                                             <div class="lh-24 fs-16">{{ $testi->profession }}</div>
