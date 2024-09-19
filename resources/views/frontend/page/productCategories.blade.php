@@ -77,13 +77,13 @@
                                 </div>
                             </li>
                         @empty
-                            Belum ada Blog
+                            Belum ada Product
                         @endforelse
                     </ul>
                 </div>
                 <div class="col-12 mt-5 md-mt-7 d-flex justify-content-center"
                     data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <ul class="pagination pagination-style-01 fs-13 fw-500 mb-0">
+                    {{-- <ul class="pagination pagination-style-01 fs-13 fw-500 mb-0">
                         <li class="page-item"><a class="page-link" href="#"><i
                                     class="feather icon-feather-arrow-left fs-18 d-xs-none"></i></a></li>
                         <li class="page-item"><a class="page-link" href="#">01</a></li>
@@ -92,7 +92,7 @@
                         <li class="page-item"><a class="page-link" href="#">04</a></li>
                         <li class="page-item"><a class="page-link" href="#"><i
                                     class="feather icon-feather-arrow-right fs-18 d-xs-none"></i></a></li>
-                    </ul>
+                    </ul> --}}
                 </div>
             </div>
         </div>
