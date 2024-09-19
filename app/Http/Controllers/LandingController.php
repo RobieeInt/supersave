@@ -69,7 +69,6 @@ class LandingController extends Controller
         // dd($products);
 
         //
-        $productCategories = ProductCategories::where('is_active', '1')->get(); where is_active = 1
         $productCategories = ProductCategories::where('is_active', '1')->get();
         return view('frontend.page.productCategories', compact('products','contact','productCategories','queryString'));
     }
