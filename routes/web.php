@@ -31,6 +31,8 @@ use App\Http\Controllers\Admin\TestimonialController;
 Route::get('/', [LandingController::class, 'index'])->name('landing-page');
 Route::get('/productdetail/{slug}', [LandingController::class, 'productdetail'])->name('productDetail');
 
+Route::get('/productCategories', [LandingController::class, 'productCategories'])->name('productCategories');
+Route::get('/product', [LandingController::class, 'product'])->name('product');
 Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
 Route::get('/blogdetail/{slug}', [LandingController::class, 'blogdetail'])->name('blogdetail');
 

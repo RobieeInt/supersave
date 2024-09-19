@@ -4,13 +4,13 @@
             <!-- start footer column -->
             <div
                 class="col-6 col-xl-3 col-lg-12 col-sm-6 last-paragraph-no-margin text-xl-start text-lg-center order-sm-1 lg-mb-50px sm-mb-30px">
-                <a href="{{ route('landing-page') }}" class="footer-logo mb-15px d-inline-block">
-                    {{-- <img
-                        src="images/demo-corporate-logo-black.png" data-at2x="images/demo-corporate-logo-black@2x.png"
-                        alt=""> --}}
+                <a href="{{ route('landing-page') }}" class="">
+                    <img src="{{ asset('supersave/bg/logo_sseb.png') }}"
+                        data-at2x="{{ asset('supersave/bg/logo_sseb.png') }}" alt=""
+                        style="width: 100px; height: 100px;">
                 </a>
-                <p class="lh-30 w-90 xl-w-100 mx-lg-auto mx-xl-0">Gearing your company through an innovative
-                    Energy.</p>
+                <p class="lh-30 w-90 xl-w-100 mx-lg-auto mx-xl-0">Jl. Raya Mauk (M.Toha) Km.3 No. 8, Jl. Galeong,
+                    RT.001/RW.008, Margasari, Karawaci, Tangerang City, Banten 15113</p>
                 <div class="elements-social social-icon-style-02 mt-20px xs-mt-15px">
                     <ul class="medium-icon dark">
                         <li class="my-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
@@ -59,7 +59,7 @@
             </div>
             <!-- end footer column -->
             <!-- start footer column -->
-            {{-- <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-30px xs-mb-0 order-sm-2 order-lg-5">
+            <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-30px xs-mb-0 order-sm-2 order-lg-5">
                 <span class="fs-17 fw-600 d-block text-dark-gray mb-5px">Subscribe newsletter</span>
                 <p class="lh-30 w-95 sm-w-100 mb-15px">Subscribe our newsletter to get the latest news and
                     updates!</p>
@@ -76,7 +76,7 @@
                         </div>
                     </form>
                 </div>
-            </div> --}}
+            </div>
             <!-- end footer column -->
         </div>
         <div class="row justify-content-center align-items-center pt-2">
