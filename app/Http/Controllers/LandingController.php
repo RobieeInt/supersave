@@ -27,7 +27,7 @@ class LandingController extends Controller
         $contact = Contact::orderBy('id', 'desc')->first();
         //ProductCategory only
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
 
         // dd($productCategories);
 
@@ -50,7 +50,7 @@ class LandingController extends Controller
         // dd($products);
 
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         return view('frontend.page.product', compact('products','contact','productCategories'));
     }
 
@@ -69,7 +69,7 @@ class LandingController extends Controller
         // dd($products);
 
         //
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         return view('frontend.page.productCategories', compact('products','contact','productCategories','queryString'));
     }
 
@@ -81,7 +81,7 @@ class LandingController extends Controller
         // // dd($product);
 
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         // $contact = Contact::orderBy('id', 'desc')->first();
         // return view('frontend.page.productdetail', compact('product', 'randomProducts','contact'));
         return view('frontend.page.productdetail', compact('product','productCategories'));
@@ -93,7 +93,7 @@ class LandingController extends Controller
 
         $contact = Contact::orderBy('id', 'desc')->first();
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         return view('frontend.page.aboutus', compact('contact','productCategories'));
     }
 
@@ -102,7 +102,7 @@ class LandingController extends Controller
         //get data contact
         $contact = Contact::orderBy('id', 'desc')->first();
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         // dd($contact);
         return view('frontend.page.contactus', compact('contact','productCategories'));
     }
@@ -113,7 +113,7 @@ class LandingController extends Controller
         //get random blogs
         $randomBlogs = Blog::inRandomOrder()->take(3)->get();
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         // dd($blog);
         $contact = Contact::orderBy('id', 'desc')->first();
         return view('frontend.page.blogdetail', compact('blog', 'randomBlogs','contact','productCategories'));
@@ -123,7 +123,7 @@ class LandingController extends Controller
     public function blog() {
         $blogs = Blog::orderBy('created_at','desc')->paginate(12);
 
-        $productCategories = ProductCategories::where('is_active', '1')->get();
+        $productCategories = ProductCategories::where('status', '1')->get();
         // dd($blogs);
         $contact = Contact::orderBy('id', 'desc')->first();
         return view('frontend.page.blog', compact('blogs','contact','productCategories'));
