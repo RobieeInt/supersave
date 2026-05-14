@@ -2,7 +2,6 @@
     <nav class="navbar navbar-expand-lg sseb-navbar">
         <div class="container-fluid sseb-nav-container">
 
-            {{-- BRAND --}}
             <a class="navbar-brand sseb-brand" href="{{ route('landing-page') }}">
                 <div class="sseb-logo-wrapper">
                     <img src="{{ asset('supersave/bg/logo_sseb_1.png') }}"
@@ -17,8 +16,7 @@
                 </div>
             </a>
 
-            {{-- MOBILE TOGGLER --}}
-            <button class="navbar-toggler sseb-toggler"
+            <button class="sseb-mobile-toggle"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
@@ -30,10 +28,8 @@
                 <span></span>
             </button>
 
-            {{-- MENU --}}
             <div class="collapse navbar-collapse sseb-menu-wrapper" id="navbarNav">
                 <ul class="navbar-nav sseb-menu mx-auto">
-
                     <li class="nav-item">
                         <a href="{{ route('landing-page') }}" class="nav-link sseb-nav-link">Home</a>
                     </li>
@@ -48,6 +44,7 @@
                             id="productDropdown"
                             role="button"
                             data-bs-toggle="dropdown"
+                            data-bs-display="static"
                             aria-expanded="false">
                             Products
                         </a>
@@ -77,7 +74,6 @@
                     </li>
                 </ul>
 
-                {{-- MOBILE CTA --}}
                 <div class="sseb-mobile-cta d-lg-none">
                     <a href="https://wa.me/6285810003784?text=Hi%20admin%2C%20saya%20mau%20konsultasi"
                         class="sseb-btn-primary w-100"
@@ -89,7 +85,6 @@
                 </div>
             </div>
 
-            {{-- DESKTOP CTA --}}
             <div class="sseb-desktop-cta d-none d-lg-flex">
                 <a href="https://wa.me/6285810003784?text=Hi%20admin%2C%20saya%20mau%20konsultasi"
                     class="sseb-btn-primary"
@@ -113,9 +108,6 @@
         width: 100% !important;
         z-index: 999999 !important;
         background: transparent !important;
-        transform: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
     }
 
     .sseb-navbar {
@@ -124,12 +116,6 @@
         backdrop-filter: blur(14px);
         border-bottom: 1px solid rgba(15, 23, 42, 0.06);
         box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
-        transition: all 0.25s ease;
-    }
-
-    .sseb-header.sseb-header-scrolled .sseb-navbar {
-        padding: 0 !important;
-        box-shadow: 0 16px 45px rgba(15, 23, 42, 0.12);
     }
 
     .sseb-nav-container {
@@ -139,6 +125,7 @@
         padding-right: 24px;
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     .sseb-brand {
@@ -158,10 +145,6 @@
         align-items: center !important;
         justify-content: center !important;
         flex-shrink: 0 !important;
-        overflow: visible !important;
-        background: transparent !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
     }
 
     .sseb-logo {
@@ -172,12 +155,6 @@
         min-height: 72px !important;
         object-fit: contain !important;
         display: block !important;
-        border-radius: 0 !important;
-        background: transparent !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        box-shadow: none !important;
-        transform: none !important;
     }
 
     .sseb-brand-text {
@@ -222,8 +199,7 @@
         transition: all 0.25s ease;
     }
 
-    .sseb-nav-link:hover,
-    .sseb-nav-link:focus {
+    .sseb-nav-link:hover {
         color: #0f4c81 !important;
     }
 
@@ -246,12 +222,6 @@
         transform: scaleX(1);
     }
 
-    .sseb-dropdown .dropdown-toggle::after {
-        margin-left: 8px;
-        vertical-align: middle;
-        border-top-color: currentColor;
-    }
-
     .sseb-dropdown-menu {
         min-width: 240px;
         padding: 10px;
@@ -270,7 +240,6 @@
         font-size: 14px;
         font-weight: 650;
         color: #334155;
-        transition: all 0.2s ease;
     }
 
     .sseb-dropdown-menu .dropdown-item i {
@@ -281,7 +250,6 @@
     .sseb-dropdown-menu .dropdown-item:hover {
         background: #eff6ff;
         color: #0f4c81;
-        transform: translateX(3px);
     }
 
     .sseb-btn-primary {
@@ -297,41 +265,55 @@
         font-size: 14px;
         font-weight: 800;
         text-decoration: none !important;
-        transition: all 0.25s ease;
         box-shadow: 0 14px 32px rgba(15, 76, 129, 0.24);
         white-space: nowrap;
     }
 
-    .sseb-btn-primary:hover {
-        color: #ffffff !important;
-        transform: translateY(-2px);
-        box-shadow: 0 18px 38px rgba(15, 76, 129, 0.30);
-    }
-
-    .sseb-btn-primary i {
-        font-size: 16px;
-    }
-
-    .sseb-toggler {
+    .sseb-mobile-toggle {
+        display: none;
         width: 44px;
         height: 44px;
         padding: 0;
-        border: 1px solid rgba(15, 23, 42, 0.12);
-        border-radius: 14px;
-        box-shadow: none !important;
+        border: 1px solid rgba(15, 76, 129, 0.16);
+        border-radius: 999px;
+        background: #ffffff;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        flex-shrink: 0;
     }
 
-    .sseb-toggler span {
-        display: block;
-        width: 20px;
+    .sseb-mobile-toggle span {
+        width: 19px;
         height: 2px;
-        margin: 5px auto;
         border-radius: 999px;
         background: #0f172a;
+        transition: all 0.25s ease;
+    }
+
+    .sseb-mobile-toggle span:nth-child(2) {
+        width: 14px;
+    }
+
+    .sseb-mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        width: 20px;
+    }
+
+    .sseb-mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+        width: 0;
+    }
+
+    .sseb-mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        width: 20px;
     }
 
     .sseb-mobile-cta {
-        padding-top: 14px;
+        padding-top: 12px;
     }
 
     @media (max-width: 1199.98px) {
@@ -341,80 +323,102 @@
         }
 
         .sseb-logo-wrapper {
-            width: 88px !important;
-            height: 88px !important;
+            width: 68px !important;
+            height: 68px !important;
         }
 
         .sseb-logo {
-            min-width: 88px !important;
-            min-height: 88px !important;
+            min-width: 68px !important;
+            min-height: 68px !important;
         }
 
         .sseb-brand-title {
             font-size: 28px;
         }
-
-        .sseb-brand-subtitle {
-            font-size: 12px;
-        }
-
-        .sseb-nav-link {
-            padding: 10px 12px !important;
-        }
-
-        .sseb-btn-primary {
-            padding: 0 16px;
-            font-size: 13px;
-        }
     }
 
     @media (max-width: 991.98px) {
-        .sseb-navbar {
-            padding: 6px 0 !important;
-        }
-
         .sseb-nav-container {
-            min-height: 76px;
-            padding-left: 16px;
-            padding-right: 16px;
+            min-height: 66px;
+            padding-left: 14px;
+            padding-right: 14px;
         }
 
         .sseb-brand {
-            min-width: auto;
-            gap: 12px !important;
+            min-width: 0;
+            max-width: calc(100% - 56px);
+            gap: 10px !important;
+            margin-right: 8px;
         }
 
         .sseb-logo-wrapper {
-            width: 72px !important;
-            height: 72px !important;
+            width: 52px !important;
+            height: 52px !important;
         }
 
         .sseb-logo {
-            min-width: 72px !important;
-            min-height: 72px !important;
+            min-width: 52px !important;
+            min-height: 52px !important;
         }
 
         .sseb-brand-title {
-            font-size: 22px;
+            font-size: 18px;
+            letter-spacing: -0.4px;
         }
 
         .sseb-brand-subtitle {
-            margin-top: 4px;
-            font-size: 10px;
+            margin-top: 3px;
+            max-width: 145px;
+            font-size: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .sseb-mobile-toggle {
+            display: inline-flex;
         }
 
         .sseb-menu-wrapper {
-            margin-top: 12px;
+            position: absolute !important;
+            top: calc(100% + 10px);
+            left: 12px;
+            right: 12px;
+            width: auto !important;
             padding: 14px;
-            border-radius: 20px;
-            background: #ffffff;
+            border-radius: 24px;
+            background: #ffffff !important;
             border: 1px solid rgba(15, 23, 42, 0.08);
-            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 24px 70px rgba(15, 23, 42, 0.16);
+            max-height: calc(100vh - 96px);
+            overflow-y: auto;
+        }
+
+        .sseb-menu-wrapper .navbar-nav {
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: stretch !important;
+            margin: 0 !important;
+        }
+
+        .sseb-menu-wrapper .nav-item {
+            width: 100% !important;
+            display: block !important;
+            text-align: left !important;
+        }
+
+        .sseb-menu {
+            gap: 4px;
         }
 
         .sseb-nav-link {
-            padding: 13px 12px !important;
-            border-radius: 12px;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            width: 100% !important;
+            padding: 13px 14px !important;
+            border-radius: 16px;
+            color: #102033 !important;
         }
 
         .sseb-nav-link::after {
@@ -422,42 +426,47 @@
         }
 
         .sseb-nav-link:hover {
-            background: #f8fafc;
+            background: #f1f5f9;
+            color: #0f4c81 !important;
+        }
+
+        .sseb-dropdown {
+            position: relative !important;
+            width: 100% !important;
+        }
+
+        .sseb-dropdown > .sseb-nav-link,
+        .sseb-dropdown .dropdown-toggle {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            width: 100% !important;
+            text-align: left !important;
+        }
+
+        .sseb-dropdown .dropdown-toggle::after {
+            margin-left: 8px !important;
         }
 
         .sseb-dropdown-menu {
-            margin-top: 6px;
+            position: static !important;
+            inset: auto !important;
+            transform: none !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            margin: 6px 0 0 !important;
             padding: 8px;
-            border-radius: 14px;
+            border-radius: 16px;
             box-shadow: none;
-        }
-    }
-
-    @media (max-width: 575.98px) {
-        .sseb-nav-container {
-            min-height: 68px;
+            background: #f8fafc;
         }
 
-        .sseb-logo-wrapper {
-            width: 60px !important;
-            height: 60px !important;
+        .sseb-dropdown-menu .dropdown-item {
+            width: 100% !important;
         }
 
-        .sseb-logo {
-            min-width: 60px !important;
-            min-height: 60px !important;
-        }
-
-        .sseb-brand-title {
-            font-size: 18px;
-        }
-
-        .sseb-brand-subtitle {
-            max-width: 150px;
-            font-size: 9px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .sseb-mobile-cta .sseb-btn-primary {
+            min-height: 46px;
         }
     }
 </style>
@@ -469,17 +478,11 @@
         if (!header) return;
 
         const handleHeaderScroll = () => {
-            if (window.scrollY > 20) {
-                header.classList.add('sseb-header-scrolled');
-            } else {
-                header.classList.remove('sseb-header-scrolled');
-            }
+            header.classList.toggle('sseb-header-scrolled', window.scrollY > 20);
         };
 
         handleHeaderScroll();
 
-        window.addEventListener('scroll', handleHeaderScroll, {
-            passive: true
-        });
+        window.addEventListener('scroll', handleHeaderScroll, { passive: true });
     });
 </script>

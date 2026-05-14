@@ -80,7 +80,7 @@
     </style>
 </head>
 
-<body class="sseb-fixed-header-body" data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern"
+<body class="sseb-fixed-header-body" data-mobile-nav-trigger-alignment="right"
     data-mobile-nav-bg-color="#242E45">
 
     <div class="box-layout">
