@@ -3,190 +3,672 @@
 @section('title', 'About Us')
 
 @section('content')
-    <!-- Start about section -->
 
-    <section id="down-section" class="border-bottom border-color-extra-medium-gray">
-        <div class="container overlap-gap-section">
-            <div class="row align-items-end justify-content-center mb-5 md-mb-40px text-center text-md-start">
-                <div class="col-xl-5 col-lg-6 col-md-10 md-mb-20px text-center text-lg-start"
-                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <span
-                        class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">About
-                        company</span>
-                    <h3 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Powerful agency for corporate business.</h3>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-10 offset-xl-1 text-center text-lg-start last-paragraph-no-margin">
-                    <p class="w-90 xl-w-100"
-                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        We strive to develop real-world web solutions that are ideal for small to large projects with
-                        bespoke project requirements. we compelling web, <span
-                            class="fw-600 text-dark-gray text-decoration-line-bottom">which are the right-fit for your
-                            target.</span></p>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 justify-content-center"
-                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <!-- start features box item -->
-                <div class="col custom-icon-with-text-style-02">
-                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden md-mb-20px">
-                        <div class="feature-box-icon">
-                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
-                        </div>
-                        <div class="feature-box-content">
-                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Trusted company</span>
-                            <p>We deliver email marketing campaigns to audience.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col custom-icon-with-text-style-02">
-                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden md-mb-20px">
-                        <div class="feature-box-icon">
-                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
-                        </div>
-                        <div class="feature-box-content">
-                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Professional work</span>
-                            <p>We also help our clients with social media strategy.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col custom-icon-with-text-style-02">
-                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden xs-mb-20px">
-                        <div class="feature-box-icon">
-                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
-                        </div>
-                        <div class="feature-box-content">
-                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Award winning</span>
-                            <p>We believe in challenges so we have made challenges.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-                <!-- start features box item -->
-                <div class="col custom-icon-with-text-style-02">
-                    <div class="feature-box p-6 last-paragraph-no-margin overflow-hidden">
-                        <div class="feature-box-icon">
-                            <img class="custom-image-icon mb-20px" src="https://via.placeholder.com/60x60" alt="" />
-                        </div>
-                        <div class="feature-box-content">
-                            <span class="d-block fs-19 fw-700 text-dark-gray mb-5px">Help any time</span>
-                            <p>We never fail for support for your business anywhere.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- end features box item -->
-            </div>
-        </div>
-    </section>
+<section id="down-section" class="sseb-about-hero">
+    <div class="container">
 
-    <section class="py-0 sm-pt-50px"
-        data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-        <div class="container overlap-section">
-            <div class="row justify-content-center g-0">
-                <div
-                    class="col-auto text-center last-paragraph-no-margin icon-with-text-style-08 pt-20px pb-20px ps-8 pe-8 md-ps-30px md-pe-30px bg-white border border-color-extra-medium-gray box-shadow-medium-bottom border-radius-100px xs-border-radius-10px">
-                    <div class="feature-box feature-box-left-icon-middle overflow-hidden">
-                        <div class="feature-box-icon me-10px">
-                            <i class="bi bi-chat-text icon-extra-medium text-base-color"></i>
-                        </div>
-                        <div
-                            class="feature-box-content last-paragraph-no-margin text-dark-gray text-uppercase fs-15 fw-700 ls-05px">
-                            Let's make something great work together. <a href="demo-corporate-contact.html"
-                                class="text-base-color text-decoration-line-bottom-medium border-1">Got a project in
-                                mind?</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="row align-items-center g-5">
 
-    <section class="position-relative overflow-hidden">
-        <div class="container">
-            <div class="row justify-content-center align-items-center mb-3">
-                <div class="col-xl-5 col-lg-6 md-mb-14 sm-mb-18 xs-mb-23 position-relative"
-                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="w-75 sm-w-80" data-animation-delay="200" data-shadow-animation="true"
-                        data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
-                        <img src="https://via.placeholder.com/600x710" alt="" class="border-radius-6px w-100">
-                        <div
-                            class="position-absolute top-30px z-index-8 left-minus-90px lg-left-minus-25px sm-left-minus-0px lg-w-30">
-                            <img src="images/demo-corporate-about-01.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="w-55 overflow-hidden position-absolute right-15px xs-w-55 bottom-minus-50px"
-                        data-shadow-animation="true" data-animation-delay="100"
-                        data-bottom-top="transform: translateY(20px)" data-top-bottom="transform: translateY(-20px)">
-                        <img src="https://via.placeholder.com/600x633" alt=""
-                            class="border-radius-6px box-shadow-quadruple-large w-100" />
+            {{-- LEFT CONTENT --}}
+            <div class="col-lg-6"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 700, "delay": 0, "staggervalue": 180, "easing": "easeOutQuad" }'>
+
+                <span class="sseb-about-badge">
+                    About Super Save
+                </span>
+
+                <h1 class="sseb-about-title">
+                    Solusi produk energi dan kelistrikan yang lebih praktis untuk kebutuhan Anda.
+                </h1>
+
+                <p class="sseb-about-description">
+                    Super Save Elektronik Ballast hadir untuk membantu kebutuhan produk elektronik ballast,
+                    kelistrikan, dan solusi energi dengan pilihan produk yang reliable untuk rumah, bisnis,
+                    hingga kebutuhan proyek.
+                </p>
+
+                <div class="sseb-about-actions">
+                    <a href="https://wa.me/6285810003784?text=Halo%20SuperSave%2C%20saya%20ingin%20konsultasi"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="sseb-about-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Konsultasi Produk
+                    </a>
+
+                    <a href="{{ route('product') }}" class="sseb-about-link">
+                        Lihat Produk
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            {{-- RIGHT VISUAL --}}
+            <div class="col-lg-6"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 160, "easing": "easeOutQuad" }'>
+
+                <div class="sseb-about-visual">
+                    <img src="{{ asset('supersave/animation/solar-animation-res.png') }}"
+                        alt="Super Save Elektronik Ballast"
+                        class="sseb-about-main-img">
+
+                    <div class="sseb-about-floating-card">
+                        <strong>28+</strong>
+                        <span>Tahun pengalaman industri</span>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start"
-                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 800, "delay": 150, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="swiper position-relative magic-cursor"
-                        data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
-                        <div class="swiper-wrapper mb-10px">
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span
-                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
-                                    mission</span>
-                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">We help to business growth and
-                                    solution.</h3>
-                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
-                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
-                                    scrambled it specimen book.</p>
-                            </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span
-                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
-                                    vision</span>
-                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">A business plan and performance
-                                    ideas.</h3>
-                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
-                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
-                                    scrambled it specimen book.</p>
-                            </div>
-                            <!-- end text slider item -->
-                            <!-- start text slider item -->
-                            <div class="swiper-slide">
-                                <span
-                                    class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-14 lh-42px fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-block">Company
-                                    value</span>
-                                <h3 class="text-dark-gray fw-700 ls-minus-1px mb-20px">Make the creative solutions for
-                                    business.</h3>
-                                <p class="w-95 xl-w-100">Lorem ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem ipsum has been industry's standard dummy text ever since the when an
-                                    unknown adipiscing elit do eiusmod tempor incididunt ut labore printer took and
-                                    scrambled it specimen book.</p>
-                            </div>
-                            <!-- end text slider item -->
-                        </div>
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <!-- start slider navigation -->
-                            <div
-                                class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 border border-color-extra-medium-gray bg-white">
-                                <i class="bi bi-arrow-left-short icon-very-medium text-dark-gray"></i></div>
-                            <div
-                                class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 border border-color-extra-medium-gray bg-white">
-                                <i class="bi bi-arrow-right-short icon-very-medium text-dark-gray"></i></div>
-                            <!-- end slider navigation -->
-                        </div>
+
+            </div>
+
+        </div>
+
+        {{-- FEATURES --}}
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4 sseb-feature-row"
+            data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 700, "delay": 100, "staggervalue": 120, "easing": "easeOutQuad" }'>
+
+            <div class="col">
+                <div class="sseb-feature-card">
+                    <div class="sseb-feature-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
+
+                    <h4>Produk Terpercaya</h4>
+
+                    <p>
+                        Pilihan produk yang disiapkan untuk kebutuhan kelistrikan dan energi yang lebih stabil.
+                    </p>
                 </div>
             </div>
+
+            <div class="col">
+                <div class="sseb-feature-card">
+                    <div class="sseb-feature-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+
+                    <h4>Dukungan Profesional</h4>
+
+                    <p>
+                        Tim kami siap membantu Anda memilih produk sesuai kebutuhan penggunaan atau proyek.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="sseb-feature-card">
+                    <div class="sseb-feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h4>Solusi Praktis</h4>
+
+                    <p>
+                        Kami bantu arahkan kebutuhan produk agar lebih mudah, efisien, dan tepat sasaran.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="sseb-feature-card">
+                    <div class="sseb-feature-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h4>Mudah Dihubungi</h4>
+
+                    <p>
+                        Butuh informasi cepat? Konsultasi langsung lewat WhatsApp tanpa ribet.
+                    </p>
+                </div>
+            </div>
+
         </div>
-        <img src="https://via.placeholder.com/655x590"
-            class="position-absolute bottom-minus-50px right-minus-50px z-index-minus-1"
-            data-bottom-top="transform: rotate(0deg) translateY(0)"
-            data-top-bottom="transform:rotate(-15deg) translateY(0)" alt="" />
-    </section>
-    <!-- End about section -->
+
+    </div>
+</section>
+
+<section class="sseb-about-cta-section">
+    <div class="container">
+        <div class="sseb-about-cta"
+            data-anime='{ "translateY": [20, 0], "opacity": [0,1], "duration": 700, "delay": 0, "easing": "easeOutQuad" }'>
+
+            <div class="sseb-about-cta-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div>
+                <h4>Butuh rekomendasi produk yang cocok?</h4>
+                <p>Chat tim kami, nanti dibantu arahin sesuai kebutuhan Anda.</p>
+            </div>
+
+            <a href="https://wa.me/6285810003784?text=Halo%20SuperSave%2C%20saya%20ingin%20bertanya%20tentang%20produk"
+                target="_blank"
+                rel="noopener noreferrer">
+                Tanya Sekarang
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="sseb-about-story-section">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            {{-- LEFT IMAGE --}}
+            <div class="col-lg-6"
+                data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 100, "easing": "easeOutQuad" }'>
+
+                <div class="sseb-story-image-wrap">
+                    <img src="{{ asset('supersave/bg/solar-panel-bg.jpg') }}"
+                        alt="Solusi energi Super Save"
+                        class="sseb-story-image">
+
+                    <div class="sseb-story-mini-card">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Reliable untuk rumah, bisnis, dan proyek</span>
+                    </div>
+                </div>
+
+            </div>
+
+            {{-- RIGHT CONTENT --}}
+            <div class="col-lg-6"
+                data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 700, "delay": 100, "staggervalue": 160, "easing": "easeOutQuad" }'>
+
+                <span class="sseb-about-badge">
+                    Cara Kami Bekerja
+                </span>
+
+                <h2 class="sseb-story-title">
+                    Fokus kami sederhana: produk yang tepat, komunikasi jelas, dan pelayanan yang mudah.
+                </h2>
+
+                <p class="sseb-story-text">
+                    Kami percaya pelanggan tidak perlu dibuat bingung dengan pilihan produk yang terlalu teknis.
+                    Karena itu, Super Save membantu proses pemilihan produk agar lebih praktis, dari kebutuhan dasar
+                    sampai kebutuhan proyek yang lebih spesifik.
+                </p>
+
+                <div class="sseb-value-list">
+
+                    <div class="sseb-value-item">
+                        <span>01</span>
+                        <div>
+                            <h5>Konsultasi kebutuhan</h5>
+                            <p>Kami bantu pahami kebutuhan produk sebelum Anda membeli.</p>
+                        </div>
+                    </div>
+
+                    <div class="sseb-value-item">
+                        <span>02</span>
+                        <div>
+                            <h5>Rekomendasi produk</h5>
+                            <p>Produk diarahkan sesuai penggunaan, kapasitas, dan kebutuhan proyek.</p>
+                        </div>
+                    </div>
+
+                    <div class="sseb-value-item">
+                        <span>03</span>
+                        <div>
+                            <h5>Support setelah pembelian</h5>
+                            <p>Tim kami tetap bisa dihubungi jika Anda butuh bantuan lanjutan.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .sseb-about-hero {
+        padding: 120px 0 80px;
+        background:
+            radial-gradient(circle at top left, rgba(15, 76, 129, 0.08), transparent 32%),
+            linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        overflow: hidden;
+    }
+
+    .sseb-about-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 18px;
+        margin-bottom: 20px;
+        border-radius: 999px;
+        background: rgba(15, 76, 129, 0.08);
+        color: #0f4c81;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .sseb-about-title {
+        max-width: 720px;
+        margin-bottom: 24px;
+        color: #102033;
+        font-size: 58px;
+        line-height: 1.05;
+        font-weight: 800;
+        letter-spacing: -2.4px;
+    }
+
+    .sseb-about-description {
+        max-width: 650px;
+        margin-bottom: 34px;
+        color: #64748b;
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    .sseb-about-actions {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .sseb-about-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 0 26px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #0f4c81 0%, #1565a9 100%);
+        color: #ffffff !important;
+        font-size: 15px;
+        font-weight: 800;
+        text-decoration: none;
+        box-shadow: 0 16px 40px rgba(15, 76, 129, 0.20);
+        transition: all 0.25s ease;
+    }
+
+    .sseb-about-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 22px 48px rgba(15, 76, 129, 0.28);
+    }
+
+    .sseb-about-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: #102033;
+        font-size: 15px;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .sseb-about-link:hover {
+        color: #0f4c81;
+    }
+
+    .sseb-about-visual {
+        position: relative;
+        min-height: 520px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sseb-about-main-img {
+        width: 100%;
+        max-width: 540px;
+        filter: drop-shadow(0 34px 70px rgba(15, 23, 42, 0.13));
+    }
+
+    .sseb-about-floating-card {
+        position: absolute;
+        left: 24px;
+        bottom: 40px;
+        width: 210px;
+        padding: 24px 20px;
+        border-radius: 26px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12);
+        text-align: center;
+    }
+
+    .sseb-about-floating-card strong {
+        display: block;
+        color: #102033;
+        font-size: 62px;
+        line-height: 0.95;
+        font-weight: 800;
+        letter-spacing: -3px;
+    }
+
+    .sseb-about-floating-card span {
+        display: block;
+        margin-top: 10px;
+        color: #475569;
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+
+    .sseb-feature-row {
+        margin-top: 72px;
+    }
+
+    .sseb-feature-card {
+        height: 100%;
+        padding: 30px 26px;
+        border-radius: 26px;
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.06);
+        box-shadow: 0 18px 50px rgba(15, 23, 42, 0.06);
+        transition: all 0.25s ease;
+    }
+
+    .sseb-feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 26px 70px rgba(15, 23, 42, 0.10);
+    }
+
+    .sseb-feature-icon {
+        width: 56px;
+        height: 56px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 18px;
+        background: rgba(15, 76, 129, 0.08);
+        color: #0f4c81;
+        font-size: 22px;
+    }
+
+    .sseb-feature-card h4 {
+        margin-bottom: 10px;
+        color: #102033;
+        font-size: 19px;
+        font-weight: 800;
+        letter-spacing: -0.3px;
+    }
+
+    .sseb-feature-card p {
+        margin: 0;
+        color: #64748b;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .sseb-about-cta-section {
+        padding: 0;
+        background: #ffffff;
+    }
+
+    .sseb-about-cta {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-top: -20px;
+        padding: 24px 28px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    .sseb-about-cta-icon {
+        width: 54px;
+        height: 54px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: rgba(15, 76, 129, 0.08);
+        color: #0f4c81;
+        font-size: 24px;
+    }
+
+    .sseb-about-cta h4 {
+        margin: 0 0 4px;
+        color: #102033;
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    .sseb-about-cta p {
+        margin: 0;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+    .sseb-about-cta a {
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 22px;
+        border-radius: 999px;
+        background: #102033;
+        color: #ffffff !important;
+        font-size: 14px;
+        font-weight: 800;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all 0.25s ease;
+    }
+
+    .sseb-about-cta a:hover {
+        transform: translateY(-2px);
+        background: #0f4c81;
+    }
+
+    .sseb-about-story-section {
+        padding: 95px 0;
+        background: #ffffff;
+        overflow: hidden;
+    }
+
+    .sseb-story-image-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 34px;
+        box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
+    }
+
+    .sseb-story-image {
+        width: 100%;
+        height: 560px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .sseb-story-mini-card {
+        position: absolute;
+        left: 26px;
+        right: 26px;
+        bottom: 26px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 18px 20px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
+    }
+
+    .sseb-story-mini-card i {
+        width: 38px;
+        height: 38px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #0f4c81;
+        color: #ffffff;
+    }
+
+    .sseb-story-mini-card span {
+        color: #102033;
+        font-weight: 800;
+        line-height: 1.4;
+    }
+
+    .sseb-story-title {
+        margin-bottom: 22px;
+        color: #102033;
+        font-size: 44px;
+        line-height: 1.12;
+        font-weight: 800;
+        letter-spacing: -1.6px;
+    }
+
+    .sseb-story-text {
+        margin-bottom: 30px;
+        color: #64748b;
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .sseb-value-list {
+        display: grid;
+        gap: 18px;
+    }
+
+    .sseb-value-item {
+        display: flex;
+        gap: 18px;
+        padding: 20px;
+        border-radius: 22px;
+        background: #f8fafc;
+        border: 1px solid rgba(15, 23, 42, 0.05);
+    }
+
+    .sseb-value-item > span {
+        width: 42px;
+        height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #102033;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    .sseb-value-item h5 {
+        margin: 0 0 6px;
+        color: #102033;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .sseb-value-item p {
+        margin: 0;
+        color: #64748b;
+        line-height: 1.7;
+    }
+
+    @media (max-width: 991.98px) {
+        .sseb-about-hero {
+            padding: 100px 0 65px;
+        }
+
+        .sseb-about-title {
+            font-size: 42px;
+            letter-spacing: -1.4px;
+        }
+
+        .sseb-about-visual {
+            min-height: auto;
+        }
+
+        .sseb-about-floating-card {
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        .sseb-about-cta {
+            align-items: flex-start;
+            border-radius: 28px;
+            flex-direction: column;
+        }
+
+        .sseb-about-cta a {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .sseb-about-story-section {
+            padding: 75px 0;
+        }
+
+        .sseb-story-title {
+            font-size: 36px;
+            letter-spacing: -1px;
+        }
+
+        .sseb-story-image {
+            height: 420px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .sseb-about-hero {
+            padding: 85px 0 55px;
+        }
+
+        .sseb-about-title {
+            font-size: 34px;
+        }
+
+        .sseb-about-description {
+            font-size: 16px;
+        }
+
+        .sseb-about-btn,
+        .sseb-about-link {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .sseb-about-floating-card {
+            width: 190px;
+            padding: 20px 18px;
+        }
+
+        .sseb-about-floating-card strong {
+            font-size: 52px;
+        }
+
+        .sseb-feature-row {
+            margin-top: 55px;
+        }
+
+        .sseb-story-image {
+            height: 320px;
+        }
+
+        .sseb-story-title {
+            font-size: 31px;
+        }
+
+        .sseb-value-item {
+            padding: 18px;
+        }
+    }
+</style>
+
 @endsection
