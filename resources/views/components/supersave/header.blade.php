@@ -30,6 +30,7 @@
 
             <div class="collapse navbar-collapse sseb-menu-wrapper" id="navbarNav">
                 <ul class="navbar-nav sseb-menu mx-auto">
+
                     <li class="nav-item">
                         <a href="{{ route('landing-page') }}" class="nav-link sseb-nav-link">Home</a>
                     </li>
@@ -38,16 +39,18 @@
                         <a href="{{ route('aboutus') }}" class="nav-link sseb-nav-link">About Us</a>
                     </li>
 
-                    <li class="nav-item dropdown sseb-dropdown">
-                        <a href="{{ route('product') }}"
-                            class="nav-link sseb-nav-link dropdown-toggle"
+                    {{-- DESKTOP PRODUCTS DROPDOWN --}}
+                    <li class="nav-item dropdown sseb-dropdown d-none d-lg-block">
+                        {{-- <a href="{{ route('product') }}"
+                            class="nav-link sseb-nav-link sseb-product-toggle"
                             id="productDropdown"
                             role="button"
                             data-bs-toggle="dropdown"
-                            data-bs-display="static"
                             aria-expanded="false">
-                            Products
-                        </a>
+
+                            <span>Products</span>
+                            <i class="fa-solid fa-chevron-down sseb-dropdown-icon"></i>
+                        </a> --}}
 
                         <ul class="dropdown-menu sseb-dropdown-menu" aria-labelledby="productDropdown">
                             @forelse ($productCategories as $item)
@@ -64,6 +67,22 @@
                             @endforelse
                         </ul>
                     </li>
+
+                    {{-- MOBILE PRODUCTS NORMAL MENU --}}
+                    <li class="nav-item d-lg-none">
+                        <a href="{{ route('product') }}" class="nav-link sseb-nav-link">
+                            Products
+                        </a>
+                    </li>
+
+                    @foreach ($productCategories as $item)
+                        <li class="nav-item d-lg-none">
+                            <a href="{{ route('productCategories', $item->slug) }}" class="nav-link sseb-mobile-category-link">
+                                <i class="fa-solid fa-bolt"></i>
+                                {{ $item->name }}
+                            </a>
+                        </li>
+                    @endforeach
 
                     <li class="nav-item">
                         <a href="{{ route('blog') }}" class="nav-link sseb-nav-link">Blog</a>
@@ -182,10 +201,6 @@
         white-space: nowrap;
     }
 
-    .sseb-menu-wrapper {
-        align-items: center;
-    }
-
     .sseb-menu {
         gap: 6px;
     }
@@ -203,23 +218,24 @@
         color: #0f4c81 !important;
     }
 
-    .sseb-nav-link::after {
-        content: "";
-        position: absolute;
-        left: 16px;
-        right: 16px;
-        bottom: 4px;
-        height: 2px;
-        border-radius: 999px;
-        background: #0f4c81;
-        opacity: 0;
-        transform: scaleX(0.3);
-        transition: all 0.25s ease;
+    .sseb-product-toggle {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px;
     }
 
-    .sseb-nav-link:hover::after {
-        opacity: 1;
-        transform: scaleX(1);
+    .sseb-dropdown-icon {
+        font-size: 11px;
+        transition: transform .25s ease;
+    }
+
+    .sseb-product-toggle.show .sseb-dropdown-icon,
+    .sseb-dropdown.show .sseb-dropdown-icon {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-toggle::after {
+        display: none !important;
     }
 
     .sseb-dropdown-menu {
@@ -384,7 +400,7 @@
             left: 12px;
             right: 12px;
             width: auto !important;
-            padding: 14px;
+            padding: 18px;
             border-radius: 24px;
             background: #ffffff !important;
             border: 1px solid rgba(15, 23, 42, 0.08);
@@ -421,48 +437,33 @@
             color: #102033 !important;
         }
 
-        .sseb-nav-link::after {
-            display: none;
-        }
-
         .sseb-nav-link:hover {
             background: #f1f5f9;
             color: #0f4c81 !important;
         }
 
-        .sseb-dropdown {
-            position: relative !important;
-            width: 100% !important;
-        }
-
-        .sseb-dropdown > .sseb-nav-link,
-        .sseb-dropdown .dropdown-toggle {
+        .sseb-mobile-category-link {
             display: flex !important;
             align-items: center !important;
-            justify-content: flex-start !important;
+            gap: 9px;
             width: 100% !important;
-            text-align: left !important;
+            margin-left: 12px;
+            padding: 9px 14px !important;
+            border-radius: 14px;
+            color: #64748b !important;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none !important;
         }
 
-        .sseb-dropdown .dropdown-toggle::after {
-            margin-left: 8px !important;
+        .sseb-mobile-category-link i {
+            color: #0f4c81;
+            font-size: 12px;
         }
 
-        .sseb-dropdown-menu {
-            position: static !important;
-            inset: auto !important;
-            transform: none !important;
-            width: 100% !important;
-            min-width: 100% !important;
-            margin: 6px 0 0 !important;
-            padding: 8px;
-            border-radius: 16px;
-            box-shadow: none;
+        .sseb-mobile-category-link:hover {
             background: #f8fafc;
-        }
-
-        .sseb-dropdown-menu .dropdown-item {
-            width: 100% !important;
+            color: #0f4c81 !important;
         }
 
         .sseb-mobile-cta .sseb-btn-primary {
